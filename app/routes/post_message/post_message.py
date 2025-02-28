@@ -11,4 +11,4 @@ async def post_message(message: Message = Depends(validate_tokens)):
         ai_response = send_message(message.content)
         return {"message": ai_response}
     except Exception as e:
-        return HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=str(e))
