@@ -9,6 +9,7 @@ def get_messages(userId:str):
     result = []
     for message in chat_history:
         result.append({
+            "id":message.additional_kwargs.get("id"),
             "content": message.content,
             "type": message.type,
             "date_time": message.additional_kwargs.get("date_time"),
