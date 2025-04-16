@@ -3,7 +3,7 @@ from langchain_google_firestore import FirestoreChatMessageHistory
 from langchain_groq import ChatGroq
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from app.utils.numeric_parser import parser
-from app.config.dotenv import GROQ_API_KEY, PROJECT_ID, SESSION_ID, COLLECTION_NAME,TEMPERATURE_MODEL, MODEL_NAME, MAX_TOKENS 
+from app.config.dotenv import GROQ_API_KEY, PROJECT_ID, COLLECTION_NAME,TEMPERATURE_MODEL, MODEL_NAME, MAX_TOKENS 
 import datetime
 import uuid
 
